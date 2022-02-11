@@ -2,18 +2,23 @@
 
 > List all Cities
     >> http://localhost:7001/city
+    >> https://zomatoapiclone.herokuapp.com/city
 > List all restuarants
     >> http://localhost:7001/restuarants
+    >> https://zomatoapiclone.herokuapp.com/restuarants
 > List restuarants w.r.t city
     >> http://localhost:7001/restuarants?city_id=1
+    >> https://zomatoapiclone.herokuapp.com/restuarants?city_id=1
 
 
 >>>>>>>>>>>> Listing Page
 
 > List All Cuisines
     >> http://localhost:7001/cuisine
+    >> https://zomatoapiclone.herokuapp.com/cuisine
 > List all Mealtypes
     >> http://localhost:7001/mealtype
+    >>  https://zomatoapiclone.herokuapp.com/mealtype
 > Sort restuarants w.r.t Rating
 > Sort restuarants w.r.t Price
 > List all restuarants  w.r.t Mealtypes

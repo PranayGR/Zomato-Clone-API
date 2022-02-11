@@ -16,7 +16,7 @@ app.use(bodyParser.json());
 app.use(cors())
 
 app.get('/',(req,res) =>{
-    res.send("Welcome to Express");
+    res.send(`<a href="https://zomatoapiclone.herokuapp.com/city" target="_blank">City</a>`);
 })
 
 app.get('/city',(req,res) =>{
