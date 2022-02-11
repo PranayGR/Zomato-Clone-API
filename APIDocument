@@ -1,0 +1,60 @@
+>>>>>>>>>>>> Homepage
+
+> List all Cities
+    >> http://localhost:7001/city
+> List all restuarants
+    >> http://localhost:7001/restuarants
+> List restuarants w.r.t city
+    >> http://localhost:7001/restuarants?city_id=1
+
+
+>>>>>>>>>>>> Listing Page
+
+> List All Cuisines
+    >> http://localhost:7001/cuisine
+> List all Mealtypes
+    >> http://localhost:7001/mealtype
+> Sort restuarants w.r.t Rating
+> Sort restuarants w.r.t Price
+> List all restuarants  w.r.t Mealtypes
+    >> http://localhost:7001/restuarants?meal_id=1
+> List all restuarants  w.r.t Cuisines 
+    >> http://localhost:7001/restuarants?cuisine_id=1
+> Cuisine Filter
+    >> http://localhost:7001/filter/1?cuisine=1
+> Cost Filter
+    > With Ranges
+        >> http://localhost:7001/filter/1?lcost=100&hcost=500
+    > From Low To High
+        >> http://localhost:7001/filter/1?sortPrice=1
+    > From High to Low
+        >> http://localhost:7001/filter/1?sortPrice=-1
+> Rating Filter
+    > From Low To High
+        >> http://localhost:7001/filter/1?sortRating=1
+    > From High to Low
+        >> http://localhost:7001/filter/1?sortRating=-1
+
+> Pagination
+    >> http://localhost:7001/filter/1?skip=2&limit=3;
+
+>>>>>>>>>>>>> Details Page
+
+> Restuarant Details
+    >> http://localhost:7001/details/1
+> Menu w.r.t Restuarants
+    >> http://localhost:7001/menu/15
+
+> Menu Items on user Selection
+    >> http://localhost:7001/menuItem
+
+>>>>>>>>>>>>> Orders Page
+>> Place a order
+    >> http://localhost:7001/placeOrder
+>> List All Orders
+    >> http://localhost:7001/orders?email
+>> Delete Orders
+    >> http://localhost:7001/deleteOrder
+
+>> Update Orders
+    >> http://localhost:7001/updateOrder
