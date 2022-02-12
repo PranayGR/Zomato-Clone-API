@@ -19,47 +19,61 @@
 > List all Mealtypes
     >> http://localhost:7001/mealtype
     >>  https://zomatoapiclone.herokuapp.com/mealtype
-> Sort restuarants w.r.t Rating
-> Sort restuarants w.r.t Price
 > List all restuarants  w.r.t Mealtypes
     >> http://localhost:7001/restuarants?meal_id=1
+    >> https://zomatoapiclone.herokuapp.com/restuarants?meal_id=1
 > List all restuarants  w.r.t Cuisines 
     >> http://localhost:7001/restuarants?cuisine_id=1
+    >> https://zomatoapiclone.herokuapp.com/restuarants?cuisine_id=1
 > Cuisine Filter
     >> http://localhost:7001/filter/1?cuisine=1
+    >> https://zomatoapiclone.herokuapp.com/filter/1?cuisine=1
 > Cost Filter
     > With Ranges
         >> http://localhost:7001/filter/1?lcost=100&hcost=500
+        >> https://zomatoapiclone.herokuapp.com/filter/1?lcost=100&hcost=500
     > From Low To High
         >> http://localhost:7001/filter/1?sortPrice=1
+        >> https://zomatoapiclone.herokuapp.com/filter/1?sortPrice=1
     > From High to Low
         >> http://localhost:7001/filter/1?sortPrice=-1
+        >> https://zomatoapiclone.herokuapp.com/filter/1?sortPrice=-1
 > Rating Filter
     > From Low To High
         >> http://localhost:7001/filter/1?sortRating=1
+        >> https://zomatoapiclone.herokuapp.com/filter/1?sortRating=1
     > From High to Low
         >> http://localhost:7001/filter/1?sortRating=-1
+        >> https://zomatoapiclone.herokuapp.com/filter/1?sortRating=-1
 
 > Pagination
     >> http://localhost:7001/filter/1?skip=2&limit=3;
+    >> https://zomatoapiclone.herokuapp.com/filter/1?skip=2&limit=3;
 
 >>>>>>>>>>>>> Details Page
 
 > Restuarant Details
     >> http://localhost:7001/details/1
+    >> https://zomatoapiclone.herokuapp.com/details/1
 > Menu w.r.t Restuarants
     >> http://localhost:7001/menu/15
+    >> https://zomatoapiclone.herokuapp.com/menu/15
 
 > Menu Items on user Selection
     >> http://localhost:7001/menuItem
+    >> https://zomatoapiclone.herokuapp.com/menuItem
 
 >>>>>>>>>>>>> Orders Page
->> Place a order
+> Place a order
     >> http://localhost:7001/placeOrder
->> List All Orders
+    >> https://zomatoapiclone.herokuapp.com/placeOrder
+> List All Orders
     >> http://localhost:7001/orders?email
->> Delete Orders
+    >> https://zomatoapiclone.herokuapp.com/orders?email
+> Delete Orders
     >> http://localhost:7001/deleteOrder
+    >> https://zomatoapiclone.herokuapp.com/deleteOrder
 
->> Update Orders
+> Update Orders
     >> http://localhost:7001/updateOrder
+    >> https://zomatoapiclone.herokuapp.com/updateOrder
