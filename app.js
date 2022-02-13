@@ -93,7 +93,8 @@ app.get('/menu/:id',(req,res) =>{
 app.get('/filter/:mealId',(req,res) =>{
     let sort = {};
     let skip = 0;
-    let limit = 10000000000000000000;
+    let limit = 10000000000000;
+
     let mealId = Number(req.params.mealId); 
     let cuisineId = Number(req.query.cuisine);
     let lcost = req.query.lcost;
