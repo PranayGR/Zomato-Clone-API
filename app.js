@@ -137,7 +137,7 @@ app.post('/placeOrder',(req,res) =>{
 app.delete('/orders',(req,res) =>{
     db.collection('orders').remove({},(err,result) =>{
         if (err) throw err;
-        res.send('Order Added');
+        res.send('Order Removed');
     })
 })
 
