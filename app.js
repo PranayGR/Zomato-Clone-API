@@ -27,10 +27,17 @@ app.get('/city',(req,res) =>{
 })
 
 app.get('/restuarants',(req,res) =>{
+    let skip = 0;
+    let limit = 10000000000000;
     let cityId = Number(req.query.city_id);
     let mealId = Number(req.query.meal_id);
     let cuisineId = Number(req.query.cuisine_id);
     let query = {};
+
+    if(req.query.skip && req.query.limit){
+        skip=Number(req.query.skip);
+        limit=Number(req.query.limit);
+    }
     if(cityId && mealId && cuisineId){
         query = {city_id: cityId,"MealTypes.mealtype_id": mealId,"Cuisines.cuisine_id": cuisineId}
     }
@@ -48,7 +55,7 @@ app.get('/restuarants',(req,res) =>{
     } else if(cuisineId){
         query = {"Cuisines.cuisine_id": cuisineId}
     }
-    db.collection('restaurants').find(query).toArray((err,result) =>{
+    db.collection('restaurants').find(query).skip(skip).limit(limit).toArray((err,result) =>{
         if(err) throw err;
         res.send(result);
     })
