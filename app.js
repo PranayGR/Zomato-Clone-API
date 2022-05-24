@@ -173,14 +173,19 @@ app.post('/menuItem',(req,res) =>{
 // Update Order
 app.put('/updateOrder/:id',(req, res) =>{
     let oid = mongo.ObjectId(req.params.id);
-    let status = req.query.status?req.query.status:"Pending";
+    // let status = req.query.status?req.query.status:"Pending";
+    // let orderId = req.query.orderId;
+    // let date = req.
     db.collection('orders').updateOne(
         {_id: oid},
         {$set:{
-            "status": status
+            "status": req.body.status,
+            "orderId": req.body.orderId,
+            "date": req.body.date,
+            "bank": req.body.bank
         }},(err,result) =>{
             if (err) throw err;
-            res.send(`Status Updated to ${status}`);
+            res.send(`Status Updated to ${req.body.status}`);
         }
     )
 })
